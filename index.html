@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darius' Portofolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo-title">
+                <a href="index.html"><img src="assets/darius_logo.png" alt="Logo Darius" class="logo"></a>
+                <h1>Darius' Portofolio <br> Website </h1>
+            </div>
+            <nav>
+                <a href="karya.html">Karya</a>
+                <a href="keterampilan.html">Keterampilan</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+            <h3 class="quotes">Selalu ada alasan, <br> dibalik sebuah penciptaan.
+            </h3>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="left">
+                <div class="profile-section">
+                    <img src="assets/foto_profile_darius.jpg" alt="Foto Profile Darius" class="profile-pic">
+                    <div class="identitas">          
+                        <h2>Darius Fikram Azzam</h2>
+                        <h4>Informatika - Universitas PGRI Semarang</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="intro-text">
+                    <h2>Siapa Saya?</h2>
+                    <p>
+                        Darius Fikram Azzam, akrab dipanggil <b>Azzam</b> atau <b>Uus</b> di kampus. Saya adalah seorang mahasiswa Informatika Universitas PGRI Semarang yang memiliki ketertarikan pada teknologi dan sosial. Saya memiliki pengalaman organisasi sejak SMP hingga saat ini. Ketertarikan saya terhadap teknologi dan sosial secara bersamaan membuat saya memiliki tujuan untuk bisa menciptakan teknologi yang dapat bermanfaat bagi masyarakat di masa mendatang.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Darius Fikram Azzam</p>
+          </div>
+        </footer>
+      
+        <script>
+          document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+</body>
+</html>
