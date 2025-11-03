@@ -11,7 +11,7 @@ body{margin:0;color:#222;background:#f7f7fb;padding:0;}
 .site-header .container{display: flex;
 align-items: center; justify-content: space-between; margin: 0px; padding: 18px 40px; max-width: none; position: relative;}
 .logo-title{display: flex; align-items: center; gap: 15px;}
-.logo{width: 85px; height: 85px; transition: transform 0.3s ease;}
+.logo{width: 80px; height: 80px; transition: transform 0.3s ease;}
 .logo:hover{transform: scale(1.1);}
 .quotes{text-align: right;}
 .hero{display:flex;gap:100px;align-items:center;padding:40px 0;}
