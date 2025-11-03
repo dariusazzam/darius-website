@@ -2,8 +2,7 @@
 body{margin:0;color:#222;background:#f7f7fb;padding:0;}
 .container{max-width:1000px;margin:0 auto;padding:20px;}
 .portfolio-list, .link-yt, .skills-container, .experience-container{background:#fff;padding:20px;border-radius:8px;box-shadow:0 6px 18px rgba(198, 205, 215, 0.04);margin-bottom:16px}
-.site-header{background:#c7d0c9;color:#0f3457;padding:18px 0;position:fixed;top: 0;
-width: 100%;}
+.site-header{background:#c7d0c9;color:#0f3457;padding:18px 0;}
 .site-header h1{margin:0;font-size:25px}
 .site-header nav{display: flex; flex-grow: 1; justify-content: center; margin-top:0px; gap: 20px;}
 .site-header nav a:link, .site-header nav a:visited{display: inline-block; background-color: #0f3457; color: white; padding: 8px 20px; margin: 15px; border-radius: 100px; text-decoration: none; font-weight: bold; font-size: 21px; transition: 0.3s; align-items: center;}
