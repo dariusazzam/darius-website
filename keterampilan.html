@@ -1,119 +1,172 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keterampilan Darius</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keterampilan Darius</title>
+
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS kamu -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="logo-title">
-                <a href="index.html"><img src="assets/darius_logo.png" alt="Logo Darius" class="logo"></a>
-                <h1>Darius' Portofolio <br> Website </h1>
-            </div>
-            <nav>
-                <a href="karya.html">Karya</a>
-                <a href="keterampilan.html">Keterampilan</a>
-                <a href="kontak.html">Kontak</a>
-            </nav>
-            <h3 class="quotes">Selalu ada alasan, <br> dibalik sebuah penciptaan.
-            </h3>
-        </div>
-    </header>
 
-  <main>
-    <section class="skills">
-      <div class="judul3">
-        <div class="judul3-line"></div>
-        <h2>HARD <br>SKILL</h2>
-      </div>
-      <div class="container">
-        <section class="skills-container">
-          <h2>Berikut merupakan <i>hard skill</i> yang saya kuasai:</h2>  
-          <div class="hard-skill-grid">
-            <div class="skill-box">HTML <br>(Dasar)</div>
-            <div class="skill-box">CSS <br>(Dasar)</div>
-            <div class="skill-box">Python <br>(Dasar)</div>
-            <div class="skill-box">Carrd</div>
-            <div class="skill-box">Canva</div>
-            <div class="skill-box">CorelDRAW <br>(Dasar)</div>
-            <div class="skill-box">Blender 3D <br>(Dasar)</div>
-            <div class="skill-box">Unity <br>(Dasar)</div>
-            <div class="skill-box">Microsoft <br>Office</div>
-          </div>
-        </section>
-      </div>
-    </section>
-    <section class="experience">
-      <div class="judul4">
-        <div class="judul4-line"></div>
-        <h2>EXPERIENCE</h2>
-      </div>
-      <div class="container">
-        <section class="experience-container">
-          <div class="experience-timeline">
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="text">Medali Perunggu PORSENASMA V PT UPGRI 2025 Tangkai Lomba PKM-PI (2025)</div>
-              <img src="assets/awardplenyul.jpg" alt=" Foto Penghargaan Prestasi Tim PKM-PI UPGRIS dalam PORSENASMA V oleh Rektor UPGRIS.">
-            </div>
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="text">Medali Emas <i> International Online Competition</i> AISEEF Kategori Ilmu Sosial (2024) </div>
-              <img src="assets/awardaiseef.jpg" alt="Foto bersama Tim SMAN 1 JEPARA AISEEF 2024">
-            </div>
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="text">Duta OSIS Kabupaten Jepara (2023 - 2024)</div>
-              <img src="assets/dutaosis.jpg" alt="Foto bersama OSIS SMAN 1 JEPARA dalam Penghargaan Duta OSIS Kabupaten Jepara 2023">
-            </div>
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="text">Duta Integritas Provinsi Jawa Tengah (2022 -2023)</div>
-              <img src="assets/dutaintegritas.jpg" alt=" Foto Penghargaan Duta Integritas Provinsi Jawa Tengah">
-            </div>
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="text">Ketua OSIS SMAN 1 JEPARA (2022 - 2023)</div>
-              <img src="assets/ketuaosis.jpg" alt="Foto saya saat mempresentasikan Program Kerja OSIS SMAN 1 JEPARA Periode 2022/2023">
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-    <section class="feedback">
-      <div class="judul5">
-        <div class="judul5-line"></div>
-        <h2 class="judul5">FEEDBACK</h2>
-      </div>
-      <div class="container">
-        <section class="feedback-container">
-          <div class="feedback-display">
-            <h4><strong>Feedback/Komentar:</strong></h4>
-            <p>"Desain webnya keren banget! 😍" <b>- Ghisa</b></p>
-            <p>"Luar biasaaa!" <b>- Robin</b></p>
-            <p>"Sukses terus, Azzam :D" <b>- Venus</b></p>
-          </div>
-        </section>
-      </div>
-    </section>    
-  </main>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background:#c7d0c9;">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="assets/darius_logo.png" width="50" alt="Logo Darius">
+      <strong>Darius's Portofolio</strong>
+    </a>
 
-  <div class="beranda-button-container">
-    <a href="index.html" class="beranda-button">Beranda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <div class="navbar-nav ms-auto gap-3">
+        <a class="nav-link fw-bold" href="karya.html">Karya</a>
+        <a class="nav-link fw-bold active" href="keterampilan.html">Keterampilan</a>
+        <a class="nav-link fw-bold" href="kontak.html">Kontak</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- spacer navbar -->
+<div style="height:110px"></div>
+
+<main>
+
+<!-- ================= HARD SKILL ================= -->
+<section class="skills">
+  <div class="judul3">
+    <div class="judul3-line"></div>
+    <h2>HARD <br>SKILL</h2>
   </div>
 
-  <footer>
-    <div class="container">
-        <p>&copy; <span id="year"></span> Darius Fikram Azzam</p>
+  <div class="container">
+    <section class="skills-container">
+      <h2>Berikut merupakan <i>hard skill</i> yang saya kuasai:</h2>
+
+      <div class="row g-4 justify-content-center mt-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-box">HTML <br>(Dasar)</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-box">CSS <br>(Dasar)</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-box">Python <br>(Dasar)</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-box">Carrd</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-box">Canva</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-box">CorelDRAW <br>(Dasar)</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-box">Blender 3D <br>(Dasar)</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-box">Unity <br>(Dasar)</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-box">Microsoft <br>Office</div>
+        </div>
       </div>
-    </footer>
-  
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    </section>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="experience">
+  <div class="judul4">
+    <div class="judul4-line"></div>
+    <h2>EXPERIENCE</h2>
+  </div>
+
+  <div class="container">
+    <section class="experience-container">
+      <div class="experience-timeline">
+
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="text">Medali Perunggu PORSENASMA V PT UPGRI 2025 – PKM-PI</div>
+          <img src="assets/awardplenyul.jpg" class="img-fluid rounded shadow mt-3" alt="PORSENASMA">
+        </div>
+
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="text">Medali Emas International Online Competition AISEEF (2024)</div>
+          <img src="assets/awardaiseef.jpg" class="img-fluid rounded shadow mt-3" alt="AISEEF">
+        </div>
+
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="text">Duta OSIS Kabupaten Jepara (2023–2024)</div>
+          <img src="assets/dutaosis.jpg" class="img-fluid rounded shadow mt-3" alt="Duta OSIS">
+        </div>
+
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="text">Duta Integritas Provinsi Jawa Tengah (2022–2023)</div>
+          <img src="assets/dutaintegritas.jpg" class="img-fluid rounded shadow mt-3" alt="Duta Integritas">
+        </div>
+
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="text">Ketua OSIS SMAN 1 Jepara (2022–2023)</div>
+          <img src="assets/ketuaosis.jpg" class="img-fluid rounded shadow mt-3" alt="Ketua OSIS">
+        </div>
+
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- ================= FEEDBACK ================= -->
+<section class="feedback">
+  <div class="judul5">
+    <div class="judul5-line"></div>
+    <h2>FEEDBACK</h2>
+  </div>
+
+  <div class="container">
+    <section class="feedback-container">
+      <div class="feedback-display">
+        <h4><strong>Feedback / Komentar:</strong></h4>
+        <p>"Desain webnya keren banget! 😍" <b>- Ghisa</b></p>
+        <p>"Luar biasaaa!" <b>- Robin</b></p>
+        <p>"Sukses terus, Azzam :D" <b>- Venus</b></p>
+      </div>
+    </section>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= BUTTON ================= -->
+<div class="text-center my-5">
+  <a href="index.html" class="btn btn-lg btn-primary rounded-pill">Beranda</a>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Darius Fikram Azzam</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

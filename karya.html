@@ -1,133 +1,163 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karya Darius</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karya Darius</title>
+
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS kamu (override Bootstrap) -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="logo-title">
-                <a href="index.html"><img src="assets/darius_logo.png" alt="Logo Darius" class="logo"></a>
-                <h1>Darius' Portofolio <br> Website </h1>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background:#c7d0c9;">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="assets/darius_logo.png" width="50" alt="Logo Darius">
+      <strong>Darius's Portofolio</strong>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <div class="navbar-nav ms-auto gap-3">
+        <a class="nav-link fw-bold" href="karya.html">Karya</a>
+        <a class="nav-link fw-bold" href="keterampilan.html">Keterampilan</a>
+        <a class="nav-link fw-bold" href="kontak.html">Kontak</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- spacer navbar -->
+<div style="height:110px"></div>
+
+<main>
+<section class="karya">
+
+  <h1 class="judul1">PORTOFOLIO</h1>
+
+  <div class="container-fluid px-4">
+    <section class="portfolio-list">
+      <h1>Daftar Karya (Sekolah/Kuliah)</h1>
+
+      <ul class="list-unstyled">
+        <!-- ================= ITEM 1 ================= -->
+        <li class="mb-5">
+          <div class="item-karya">
+            <p><strong>DOES AR</strong> — <b>DOES AR (Dar Oes Salam <i>Augmented Reality</i>)</b> adalah proyek yang saya buat saat SMA sebagai media modernisasi Ruang Dar Oes Salam Museum Kartini Kabupaten Jepara.</p>
+
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-6">
+                <img src="assets/tesdoesar.png" class="img-fluid rounded shadow" alt="DOES AR">
+              </div>
+              <div class="col-md-6">
+                <img src="assets/prestasidoesar.jpg" class="img-fluid rounded shadow" alt="Prestasi DOES AR">
+              </div>
             </div>
-            <nav>
-                <a href="karya.html">Karya</a>
-                <a href="keterampilan.html">Keterampilan</a>
-                <a href="kontak.html">Kontak</a>
-            </nav>
-            <h3 class="quotes">Selalu ada alasan, <br> dibalik sebuah penciptaan.
-            </h3>
-        </div>
-    </header>
+          </div>
+        </li>
 
-  <main>
-    <section class="karya">
-        <h1 class="judul1">PORTOFOLIO</h1>
-        <div class="container">
-            <section class="portfolio-list">
-                <h1>Daftar Karya (Sekolah/Kuliah)</h1>
-                <ul>
-                    <li>
-                        <div class="item-karya">
-                            <p><strong>DOES AR</strong> — <b>DOES AR (Dar Oes Salam <i>Augmented Reality</i>)</b> adalah proyek yang saya buat saat menempuh pendidikan SMA. <b>DOES AR</b> digunakan sebagai media modernisasi Ruang Dar Oes Salam Museum Kartini Kabupaten Jepara yang berfokus pada pengenalan objek museum menggunakan teknologi AR. Proyek ini saya gunakan dalam mengikuti lomba Esai Museum Kartini Kabupaten Jepara.</p>
-                            <div class="media-karya">
-                                <img src="assets/tesdoesar.png" alt="Tes DOES AR">
-                                <img src="assets/prestasidoesar.jpg" alt="Prestasi DOES AR">
-                            </div>
-                        </div>
-                    </li>
-                    <br>
-                    <li>
-                        <div class="item-karya">
-                            <p><strong>PLENYUL</strong> — <b>PLENYUL</b> adalah proyek yang saya buat saat menempuh perkuliahan di Universitas PGRI Semarang. <b>PLENYUL</b> digunakan sebagai media modernisasi kemasan produk UMKM Pisang Plenet Pak Yuli dengan pemanfaatan komik strip berbasis <i>Augmented Reality</i>. Proyek digunakan pada ajang PORSENASMA PT UPGRI 2025 di Madiun dan dikerjakan bersama Tim PKM-PI UPGRIS. Untuk lebih lengkapnya, klik link berikut: <a href="https://linktr.ee/pisangplenet" target="_blank">plenyul</a>!</p>
-                            <div class="media-karya">
-                                <img src="assets/prestasiplenyul.JPG" alt="Tes DOES AR">
-                                <video controls>
-                                    <source src="assets/plenyulproduk.mp4" type="video/mp4">
-                                    Browser Anda tidak mendukung tag video.
-                                </video>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <br>
-                <br>
-                <div class="bagian-table">
-                    <h1>Tabel Keterangan Karya</h1>
-                    <table class="table-karya">
-                        <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama Karya</th>
-                            <th>Tahun</th>
-                            <th>Sifat</th>
-                            <th>Tingkat Pendidikan</th>
-                            <th>Keterangan</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>DOES AR</td>
-                            <td>2022</td>
-                            <td>Individu</td>
-                            <td>SMA Negeri 1 Jepara</td>
-                            <td>Karya DOES AR dilombakan sebagai media modernisasi objek Ruang Dar Oes Salam Museum Kartini Kabupaten Jepara dan mendapatkan Juara II. </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>PLENYUL</td>
-                            <td>2025</td>
-                            <td>Kelompok (Tim PKM-PI UPGRIS)</td>
-                            <td>Universitas PGRI Semarang</td>
-                            <td>Karya PLENYUL dilombakan sebagai media modernisasi kemasan produk UMKM Pisang Plenet Pak Yuli dalam ajang PORSENASMA PT UPGRI 2025 Cabang Lomba PKM-PI.</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
+        <!-- ================= ITEM 2 ================= -->
+        <li>
+          <div class="item-karya">
+            <p><strong>PLENYUL</strong> — proyek modernisasi kemasan UMKM Pisang Plenet Pak Yuli berbasis komik strip <i>Augmented Reality</i>. <a href="https://linktr.ee/pisangplenet" target="_blank">Portal PLENYUL</a></p>
+
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-6">
+                <img src="assets/prestasiplenyul.JPG" class="img-fluid rounded shadow" alt="PLENYUL">
+              </div>
+              <div class="col-md-6">
+                <video controls class="w-100 rounded shadow">
+                  <source src="assets/plenyulproduk.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- ================= TABLE ================= -->
+      <div class="bagian-table mt-5">
+        <h1>Tabel Keterangan Karya</h1>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>No</th>
+                <th>Nama Karya</th>
+                <th>Tahun</th>
+                <th>Sifat</th>
+                <th>Tingkat Pendidikan</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>DOES AR</td>
+                <td>2022</td>
+                <td>Individu</td>
+                <td>SMA Negeri 1 Jepara</td>
+                <td>Media AR museum dan Juara II lomba esai.</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>PLENYUL</td>
+                <td>2025</td>
+                <td>Kelompok</td>
+                <td>Universitas PGRI Semarang</td>
+                <td>Modernisasi kemasan UMKM berbasis AR.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <h3 class="judul2">LINK</h3>
-        <div class="container">
-            <section class="link-yt">
-                <p>Berikut ini adalah beberapa <i>link</i> yang berhubungan dengan portofolio saya maupun identitas pribadi saya.</p>
-                <ul class="list-link">
-                    <li>
-                        <p>Tautan menuju proyek PLENYUL, klink tautan berikut: <b><a href="https://linktr.ee/pisangplenet" target="_blank">Portal Proyek PLENYUL</a></b>
-                        </p>
-                    </li>
-                    <li>
-                        <p>Tautan menuju Rekaman Live Streaming PORSENASMA 2025 PKM-PI, tonton video di bawah atau klik tautan berikut: <b><a href="https://www.youtube.com/live/ZkUqYkk1ihA?si=uXsWmchTXqwtykv5">Live Streaming PORSENASMA 2025 PKM-PI</a></b></p>
-                        <div class="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZkUqYkk1ihA?si=Ks3ZQoXdDf2tHzfA" title="Rekaman Live Streaming PORSENASMA 2025 PKM-PI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </li>
-                    <li>
-                        <p>Tautan menuju lagu favorit saya (Logic - 1-800-273-8255 ft. Alessia Cara, Khalid), klik tautan berikut: <b><a href="https://www.youtube.com/watch?v=Kb24RrHIbFk">Logic - 1-800-273-8255 ft. Alessia Cara, Khalid (Official Video)
-                        </a></b></p>
-                    </li>
-                </ul>
-            </section>
-        </div>
+      </div>
     </section>
-  </main>
-
-  <div class="beranda-button-container">
-    <a href="index.html" class="beranda-button">Beranda</a>
   </div>
 
-  <footer>
-    <div class="container">
-        <p>&copy; <span id="year"></span> Darius Fikram Azzam</p>
-      </div>
-    </footer>
-  
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <!-- ================= LINK ================= -->
+  <h3 class="judul2">LINK</h3>
+
+  <div class="container-fluid px-4">
+    <section class="link-yt">
+      <ul class="list-link">
+        <li>
+          <a class="btn btn-primary rounded-pill" href="https://linktr.ee/pisangplenet" target="_blank">Portal Proyek PLENYUL</a>
+        </li>
+        <li class="mt-3">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/ZkUqYkk1ihA" allowfullscreen></iframe>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</section>
+</main>
+
+<!-- ================= BUTTON ================= -->
+<div class="text-center my-5">
+  <a href="index.html" class="btn btn-lg btn-primary rounded-pill">Beranda</a>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Darius Fikram Azzam</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

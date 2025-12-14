@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darius' Portofolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darius's Portofolio Website</title>
+
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS kamu -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="logo-title">
-                <a href="index.html"><img src="assets/darius_logo.png" alt="Logo Darius" class="logo"></a>
-                <h1>Darius' Portofolio <br> Website </h1>
-            </div>
-            <nav>
-                <a href="karya.html">Karya</a>
-                <a href="keterampilan.html">Keterampilan</a>
-                <a href="kontak.html">Kontak</a>
-            </nav>
-            <h3 class="quotes">Selalu ada alasan, <br> dibalik sebuah penciptaan.
-            </h3>
-        </div>
-    </header>
 
-    <main class="container">
-        <section class="hero">
-            <div class="left">
-                <div class="profile-section">
-                    <img src="assets/foto_profile_darius.jpg" alt="Foto Profile Darius" class="profile-pic">
-                    <div class="identitas">          
-                        <h2>Darius Fikram Azzam</h2>
-                        <h4>Informatika - Universitas PGRI Semarang</h4>
-                    </div>
-                </div>
-            </div>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background:#c7d0c9;">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="assets/darius_logo.png" width="50" alt="Logo Darius">
+      <strong>Darius' Portofolio</strong>
+    </a>
 
-            <div class="right">
-                <div class="intro-text">
-                    <h2>Siapa Saya?</h2>
-                    <p>
-                        Darius Fikram Azzam, akrab dipanggil <b>Azzam</b> atau <b>Uus</b> di kampus. Saya adalah seorang mahasiswa Informatika Universitas PGRI Semarang yang memiliki ketertarikan pada teknologi dan sosial. Saya memiliki pengalaman organisasi sejak SMP hingga saat ini. Ketertarikan saya terhadap teknologi dan sosial secara bersamaan membuat saya memiliki tujuan untuk bisa menciptakan teknologi yang dapat bermanfaat bagi masyarakat di masa mendatang.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="year"></span> Darius Fikram Azzam</p>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <div class="navbar-nav ms-auto gap-3">
+        <a class="nav-link fw-bold active" href="index.html">Beranda</a>
+        <a class="nav-link fw-bold" href="karya.html">Karya</a>
+        <a class="nav-link fw-bold" href="keterampilan.html">Keterampilan</a>
+        <a class="nav-link fw-bold" href="kontak.html">Kontak</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- spacer navbar -->
+<div style="height:110px"></div>
+
+<!-- ================= HERO ================= -->
+<main class="container">
+  <section class="hero">
+    <div class="row align-items-center g-5">
+
+      <!-- FOTO & IDENTITAS -->
+      <div class="col-lg-5 text-center">
+        <div class="profile-section">
+          <img src="assets/foto_profile_darius.jpg" alt="Foto Profile Darius" class="profile-pic img-fluid">
+          <div class="identitas mt-3">
+            <h2>Darius Fikram Azzam</h2>
+            <h4>Informatika – Universitas PGRI Semarang</h4>
           </div>
-        </footer>
-      
-        <script>
-          document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
+        </div>
+      </div>
+
+      <!-- DESKRIPSI -->
+      <div class="col-lg-7">
+        <div class="intro-text">
+          <h2>Siapa Saya?</h2>
+          <p>
+            Darius Fikram Azzam, akrab dipanggil <b>Azzam</b> atau <b>Uus</b> di kampus. Saya adalah mahasiswa Informatika Universitas PGRI Semarang yang memiliki ketertarikan pada teknologi dan sosial. Saya memiliki pengalaman organisasi sejak SMP hingga saat ini. Ketertarikan saya terhadap teknologi dan sosial secara bersamaan membuat saya memiliki tujuan untuk menciptakan teknologi yang bermanfaat bagi masyarakat di masa mendatang.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Darius Fikram Azzam</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
