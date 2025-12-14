@@ -98,7 +98,65 @@ padding: 20px;box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);font-size: 18px; color: 
 .contact-form button:hover{background-color: #14507a;transform: scale(1.05);}
 .beranda-button-container{display: flex; justify-content: center; margin: 40px 0;}
 .beranda-button:visited, .beranda-button:link{display: inline-block; background-color: #0f3457; color: white; padding: 8px 20px; margin: 15px; border-radius: 100px; text-decoration: none; font-weight: bold; font-size: 21px; transition: 0.3s;}
-.beranda-button:active{background-color: #61aae5;}
-.beranda-button:hover{background-color: #3d5a80; transform: scale(1.05)}
+.beranda-button {
+    background-color: #0f3457;
+    color: white !important;
+    padding: 8px 20px;
+    margin: 15px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+    transition: 0.3s;
+    border: none;
+  }
+  
+.beranda-button:hover {
+    background-color: #3d5a80;
+    transform: scale(1.05);
+  }
+  
+.beranda-button:active {
+    background-color: #61aae5;
+  }
+.navbar .nav-link {
+    background-color: #0f3457;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+.navbar .nav-link:hover {
+    background-color: #3d5a80;
+    transform: scale(1.05);
+    color: white;
+  }
+  
+.navbar .nav-link.active {
+    background-color: #61aae5;
+    color: white;
+  }
+.brand-text {
+    display: flex;
+    flex-direction: column; /* bikin wrap ke bawah */
+    line-height: 1.1;
+  }
+  
+.brand-line-1,
+.brand-line-2 {
+    color: #0f3457; /* warna sama kayak button */
+    font-weight: 900;
+  }
+  
+.brand-line-1 {
+    font-size: 22px;
+  }
+  
+.brand-line-2 {
+    font-size: 22px;
+  }
 footer{padding:16px 0;text-align:center;color:#666}
 @media(max-width:720px){.hero{flex-direction:column;align-items:flex-start}.video iframe{height:220px}}
